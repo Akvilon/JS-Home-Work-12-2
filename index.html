@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/lodash.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+<script type="text/html" id="myPage">
+    <div class="wrapper">
+        <div class="header">
+            <h1><%= title %></h1>
+            <img src="dd.jpg" width="206" height="274" alt="My photo">
+            <p><%= headerPar %></p>
+        </div>
+        <div class="container1">
+            <h3><%= title2 %></h3>
+            <ul>
+            <% li.forEach(function(item) { %>
+                <li><%-item%></li>
+            </ul>
+            <% }); %>   
+        </div>  
+
+        <div class="container2">
+            <h3><%= title3 %></h3>
+            <p><%= phone %></p>
+            <h3><%= title4 %></h3>
+            <p><a href="https://www.facebook.com/profile.php?id=100001134945370" target="_blank" title="My facebook page"><em><%= fb %></em></a></p>
+        </div>
+
+        <div class="feedback">
+            <h3><%= title5 %></h3>
+            <p><%= feedbackPar %></p>
+        </div>
+    </div>
+
+</script>
+  
+ 
+  
+	 
+
+</body>
+</html>
